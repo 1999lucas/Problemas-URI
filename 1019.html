@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema 1019 - CONVERSÃO DE TEMPO</title>
+</head>
+<body>
+    <script>
+        'use strict'
+        const lines = prompt('Digite o tempo em segundos').split(' ');
+
+        var totalSegundos = Number(lines[0]);
+
+        var qtdHoras = totalSegundos / 3600;
+        totalSegundos = totalSegundos % 3600;
+
+        var qtdMinutos = totalSegundos / 60;
+        totalSegundos = totalSegundos % 60;
+
+        var qtdSegundos = totalSegundos;
+
+        console.log(qtdHoras.toFixed(0) + ":" + qtdMinutos.toFixed(0) + ":" + qtdSegundos.toFixed(0));
+    </script>
+</body>
+</html>

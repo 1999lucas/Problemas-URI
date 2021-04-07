@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema 1012 - ÁREA</title>
+</head>
+
+<body>
+    <script>
+        'use strict';
+
+        const lines = prompt('Digite três valores separados entre eles por espaço').split(' ');
+
+        const A = Number(lines[0]);
+        const B = Number(lines[1]);
+        const C = Number(lines[2]);
+        
+        const pi = 3.14159;
+
+        const areaTrianguloRetangulo = (A * C) / 2;
+        const areaCirculo = pi * (C*C);
+        var areaTrapezio = ((A + B) / 2) * C;
+        const areaQuadrado = B * B;
+        const areaRetangulo = A * B;
+
+        console.log("TRIANGULO: " + areaTrianguloRetangulo.toFixed(3));
+        console.log("CIRCULO: " + areaCirculo.toFixed(3));
+        console.log("TRAPEZIO: " + areaTrapezio.toFixed(3));
+        console.log("QUADRADO: " + areaQuadrado.toFixed(3));
+        console.log("RETANGULO: " + areaRetangulo.toFixed(3));
+    </script>
+</body>
+
+</html>

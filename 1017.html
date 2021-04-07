@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema 1017 - GASTO DE COMBUSTÍVEL</title>
+</head>
+<body>
+    <script>
+        'use strict'
+        const lines = prompt ('Digite a distância').split(' ');
+
+        const tempoGasto = Number(lines[0]);
+        const velocidadeMedia = Number(lines[1]);
+
+        const qtsLitrosViagem = tempoGasto * velocidadeMedia / 12;
+
+        console.log(qtsLitrosViagem.toFixed(3));
+
+
+    </script>
+</body>
+</html>

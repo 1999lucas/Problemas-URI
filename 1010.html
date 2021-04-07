@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema 1010 - CÁLCULO SIMPLES</title>
+</head>
+
+<body>
+    <script>
+        'use strict';
+
+        const lines1 = prompt('Digite o ID da Peça 1, o número de peças e seu valor unitário').split(' ');
+        const lines2 = prompt('Digite o ID da Peça 2, o número de peças e seu valor unitário').split(' ');
+
+        const codigoPeca1 = (lines1[0]);
+        const numeroDePecas1 = Number(lines1[1]);
+        const valorPeca1 = Number(lines1[2]);
+
+        const codigoPeca2 = (lines2[0]);
+        const numeroDePecas2 = Number(lines2[1]);
+        const valorPeca2 = Number(lines2[2]);
+
+        const total = (numeroDePecas1 * valorPeca1) + (numeroDePecas2 * valorPeca2);
+
+        console.log("VALOR A PAGAR: R$ " + total.toFixed(2));
+    </script>
+</body>
+
+</html>

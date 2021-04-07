@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema 1009 - SALÁRIO COM BÔNUS</title>
+</head>
+
+<body>
+    <script>
+        'use strict';
+
+        const lines = prompt('Digite o nome do vendedor, seu salário fixo e seu total de vendas efetuadas no mês.').split(' ');
+
+        const nomeVendedor = (lines[0]);
+        const salarioFixo = Number(lines[1]);
+        const totalVendas = Number(lines[2]);
+
+        const salarioComBonus = salarioFixo + (0.15 *totalVendas);
+
+        console.log("TOTAL = R$ " + salarioComBonus.toFixed(2));
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema 1006 - MÉDIA 2</title>
+</head>
+
+<body>
+    <script>
+        'use strict';
+
+        const lines = prompt('Digite três notas, separadas por espaço.').split(' ');
+
+        const A = Number(lines[0]);
+        const B = Number(lines[1]);
+        const C = Number(lines[2]);
+
+        const media = (A * 2 + B * 3 + C * 5) / 10;
+
+        console.log(`MEDIA = ${media.toFixed(1)}`);
+    </script>
+</body>
+
+</html>
